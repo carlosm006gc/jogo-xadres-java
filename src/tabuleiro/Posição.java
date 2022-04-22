@@ -35,8 +35,7 @@ public class Posição {
 	public String toString() {
 		return linha + ", " + coluna;
 	}
-	public int valoresDefinidos(int linha, int coluna) {
-		return 0;
+	public void valoresDefinidos(int linha, int coluna) {
 	} 
 	
 }
