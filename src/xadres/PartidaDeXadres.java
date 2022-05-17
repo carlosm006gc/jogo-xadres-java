@@ -1,6 +1,9 @@
 package xadres;
 
+import tabuleiro.Posição;
 import tabuleiro.Tabuleiro;
+import xadres.peças.Rei;
+import xadres.peças.Torre;
 
 public class PartidaDeXadres {
 	
@@ -9,6 +12,7 @@ public class PartidaDeXadres {
 	public PartidaDeXadres() {
 	
 		tabuleiro = new Tabuleiro(8, 8);
+		ConfigInicial();
 	}
 	
 	public PeçaDeXadres [][] getPeças(){
@@ -20,6 +24,11 @@ public class PartidaDeXadres {
 			}
 		}
 		return mat;
+	}
+	private void ConfigInicial() {
+		tabuleiro.colocarPeça(new Rei(tabuleiro, Cor.WHITE), new Posição(2, 1));
+		tabuleiro.colocarPeça(new Torre(tabuleiro, Cor.BLACK), new Posição(0, 4));
+		
 	}
 
 }

@@ -1,5 +1,7 @@
 package tabuleiro;
 
+import java.awt.Polygon;
+
 public class Tabuleiro {
 	
 	private int colunas;
@@ -29,6 +31,10 @@ public class Tabuleiro {
 	
 	public Peça peça(Posição posiçao) {
 		return peças[posiçao.getLinha()][posiçao.getColuna()];
+	}
+	public void colocarPeça(Peça peça, Posição posiçao) {
+		peças[posiçao.getLinha()][posiçao.getColuna()]= peça;
+		peça.posiçao = posiçao;
 	}
 	
 	}
