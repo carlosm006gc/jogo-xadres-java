@@ -1,19 +1,14 @@
 package aplicação;
 
-import tabuleiro.Posição;
-import tabuleiro.Tabuleiro;
+import xadres.PartidaDeXadres;
 
 public class Projeto {
 
 	public static void main(String[] args) {
 
-		Posição pos = new Posição();
+		PartidaDeXadres partida = new PartidaDeXadres();
+		UI.printTabuleiro(partida.getPeças());
 		
-		System.out.println(pos);
-		
-		Tabuleiro tab = new Tabuleiro(0, 0);
-		
-		System.out.println(tab);
 	}
 
 }

@@ -5,12 +5,7 @@ public class Peça {
 	protected Posição posiçao;
 	private Tabuleiro tabuleiro;
 
-	public Peça() {
-
-	}
-
-	public Peça(Posição posiçao, Tabuleiro tabuleiro) {
-		super();
+	public Peça(Tabuleiro tabuleiro) {
 		this.posiçao = null;
 		this.tabuleiro = tabuleiro;
 	}
@@ -18,5 +13,7 @@ public class Peça {
 	protected Tabuleiro getTabuleiro() {
 		return tabuleiro;
 	}
+	
+	
 
 }
