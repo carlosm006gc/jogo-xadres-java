@@ -1,6 +1,6 @@
 package xadres.peças;
 
-import tabuleiro.Tabuleiro;
+import tabuleiroDeJogo.Tabuleiro;
 import xadres.Cor;
 import xadres.PeçaDeXadres;
 

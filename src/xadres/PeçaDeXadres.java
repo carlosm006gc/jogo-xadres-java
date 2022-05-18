@@ -1,7 +1,7 @@
 package xadres;
 
-import tabuleiro.Peça;
-import tabuleiro.Tabuleiro;
+import tabuleiroDeJogo.Peça;
+import tabuleiroDeJogo.Tabuleiro;
 
 public class PeçaDeXadres extends Peça {
 
